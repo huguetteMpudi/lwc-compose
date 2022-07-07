@@ -1,13 +1,10 @@
 import { LightningElement } from "lwc";
 
 export default class Main extends LightningElement {
+
   title = "Welcome to Lightning Web Components!";
 
-  showFeatures = true;
-
-  /**
-   * Getter for the features property
-   */
+  
 get role(){
 
   return "Software Developer";
