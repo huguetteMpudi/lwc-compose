@@ -2,4 +2,9 @@
 	<div class="slds-m-horizontal_xx-small slds-m-bottom_x-small">
 	I love {itemName}
 	</div>
+
+	 <button onclick={handleClick}>Toggle Footer</button>
+   <template if:true={showFooter}>
+       <footer>Footer content</footer>
+   </template>
 </template>
