@@ -40,4 +40,5 @@ get title(){
         return 'video/' + this.videoUrl.split('.').pop();
     }
 
+
 }

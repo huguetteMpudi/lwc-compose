@@ -2,9 +2,24 @@
 	<div class="app slds-p-around_x-large">
 		<h1 class="slds-text-heading_large">{title}</h1>
 		<c-wrapper video-url={video}>
+			<span slot="firstName">Willy</span>
+      <span slot="lastName">Wonka</span>
+      <span>Chocolatier</span>
 		</c-wrapper>
 		 <button onclick={handlePlay} class="slds-button slds-button_outline-brand">Play</button>
      <button onclick={handlePause} class="slds-button slds-button_destructive">Pause</button>
 		<p class="slds-text-heading_medium">{role}</p>
+	 
+
+	 <c-container>
+    <c-child item-name="milk"></c-child>
+    <template if:true={addOneMore}>
+    <c-child item-name="bread"></c-child>
+    </template>
+	</c-container>
 	</div>
+
+
+
+
 </template>

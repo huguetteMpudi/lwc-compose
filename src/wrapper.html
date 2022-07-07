@@ -1,8 +1,12 @@
 <template>
 
-  <div class="fancy-border">
+  <div class="fancy-border slds-m-bottom_x-small">
     <video autoplay>
       <source src={videoUrl} type={videoType} />
     </video>
   </div>
+  <!--<slot>This will be deleted by parent's content</slot>-->
+  <p>First Name  : <slot name="firstName">Default first name</slot></p>
+  <p>Last Name  : <slot name="lastName">Default last name</slot></p>
+  <p>Description  : <slot>Default description</slot></p>
 </template>

@@ -5,4 +5,13 @@ import { LightningElement, api } from "lwc";
  */
 export default class Child extends LightningElement {
 @api itemName='';
+
+showFooter = false;
+
+handleClick(){
+this.showFooter = true;
+
+}
+
+
 }
